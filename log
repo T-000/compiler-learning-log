@@ -1,0 +1,14 @@
+## 2025-10-09
+
+今天开始看编译器的基础。大概知道编译器分成几个部分：
+1. 词法分析（lexer）
+2. 语法分析（parser）
+3. 语义分析（semantic analysis）
+4. 中间代码生成（IR）
+5. 优化（optimization）
+6. 目标代码生成（codegen）
+
+写了一个最简单的 tokenizer：
+
+```cpp
+enum TokenType { Number, Plus, End };
