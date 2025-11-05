@@ -1,0 +1,25 @@
+# Compiler Learning Log — Static Semantics
+
+### Overview
+Static semantics ensures that a syntactically correct program is also **meaningful** before execution.  
+It checks names, scopes, and types — enabling compilers to catch semantic errors early.
+
+### Name Analysis
+- Built **symbol tables** (stack of environments) mapping identifiers to their definitions.
+- Analyzed **scope**, **visibility**, and **shadowing** rules.
+- Understood how languages handle **qualification** (e.g., struct or class fields) and multiple namespaces.
+
+### Type Checking
+- Implemented bottom-up **type propagation** on the AST.  
+- Applied rules for operator overloading and implicit casts.  
+- Detected type mismatches and undefined identifiers during traversal.
+
+### Type Inference & Unification
+- Learned the **Hindley–Milner** type system and derived typing rules for a toy functional language.  
+- Constructed **equation systems** representing type constraints and solved them using **unification**.  
+- Implemented **Algorithm W**, a syntax-directed approach for computing most-general types.  
+- Explored **let-polymorphism**, enabling type generalization and safe reuse of type variables.
+
+### Reflection
+Static semantics revealed how much logic and mathematics underpin reliable software.  
+The same reasoning principles — inference, constraint solving, and abstraction — also apply in modern AI systems that aim for safety and interpretability.
