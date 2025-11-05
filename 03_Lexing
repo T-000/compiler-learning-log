@@ -1,0 +1,24 @@
+# Compiler Learning Log — Lexical Analysis
+
+### Overview
+Lexical analysis (or **scanning**) is the first stage of compilation.  
+It transforms raw source code into a sequence of **tokens**, which are the meaningful symbols of the language.
+
+### Key Concepts
+- **Regular Languages & Expressions:**  
+  Described valid token patterns using regular expressions and represented them through **finite state machines (FSMs)**.
+- **NFSM → DFSM Conversion:**  
+  Built deterministic automata from non-deterministic ones using the subset construction algorithm.
+- **Maximal Munch Strategy:**  
+  Implemented the “longest match” rule to correctly identify tokens even in overlapping definitions.
+- **Lexer Generators (Lex/Flex):**  
+  Used declarative regex specifications to automatically generate efficient C lexers.
+
+### Implementation Insights
+- Constructed table-driven and program-driven FSMs for token recognition.
+- Understood performance differences between **hand-written** and **generated** lexers.
+- Learned how **string tables** help interning identifiers for faster symbol comparison.
+
+### Reflection
+Lexing clarified how structured patterns can emerge from unstructured text.  
+The automata concepts behind it are also fundamental to modern NLP tokenizers and pattern recognizers.
