@@ -1,6 +1,14 @@
 # Compiler Learning Log
 
-随手记录我学习编译器过程中遇到的知识点、想法和代码片段。
-语言主要用 **C++** 和 **Python**，可能会尝试用 LLVM 或手写解析器。
+This project documents my structured journey through compiler design: from lexical analysis and parsing to static semantics and type inference.
+It combines theoretical understanding with practical insights into how programming languages are translated, analyzed, and verified.
 
-这是一个开放的笔记，不追求完美，只记录成长。
+The notes summarize key concepts, algorithms, and personal reflections as I learned how source code is systematically turned into meaning — a process that parallels how modern AI models interpret structured input.
+
+Topics covered:
+
+Lexical Analysis (Regular Expressions, FSMs, Lexer Generators)
+
+Parsing (Context-Free Grammars, LL/LR Parsing, Conflict Resolution)
+
+Static Semantics (Symbol Tables, Type Checking, Hindley–Milner Inference)
