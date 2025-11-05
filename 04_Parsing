@@ -1,0 +1,27 @@
+# Compiler Learning Log — Syntax Analysis
+
+### Overview
+Parsing takes the stream of tokens from the lexer and produces a **parse tree** or **abstract syntax tree (AST)**.  
+It ensures that the program structure conforms to the grammar of the language.
+
+### Core Ideas
+- **Context-Free Grammars (CFGs):**  
+  Defined syntax rules using nonterminals and production rules.
+- **Derivations:**  
+  Explored leftmost, rightmost, and reverse-rightmost derivations and how they map to tree traversal orders.
+- **Ambiguity & Grammar Design:**  
+  Studied ambiguous grammars (e.g., the *dangling else* problem) and strategies for disambiguation.
+- **Parsing Strategies:**  
+  - **LL(k)** (top-down): Predictive, recursive-descent style parsers using lookahead.  
+  - **LR(k)** (bottom-up): Shift-reduce parsers that reconstruct rightmost derivations in reverse.
+- **Conflict Resolution:**  
+  Learned how **lookahead**, **operator precedence**, and **associativity** remove shift/reduce conflicts.
+
+### Implementation Insights
+- Constructed **LR(0)** and **LR(1)** automata using *items* and *viable prefixes*.  
+- Understood how parser generators (like Yacc/Bison) build **action** and **goto** tables.  
+- Implemented a small shift-reduce parser to visualize how parsing decisions are made in real time.
+
+### Reflection
+Parsing taught me how formal grammar theory translates into practical algorithms.  
+Designing deterministic parsers felt like designing control logic — elegant, structured, and deeply tied to language design.
